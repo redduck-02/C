@@ -5,6 +5,7 @@ struct Fraction
     int numerator;   //tử số
     int denominator; //mẫu số
 };
+
 void inputFraction(Fraction &fraction);
 void outputFraction(Fraction fraction);
 void outputDecimal(Fraction fraction);
@@ -45,22 +46,23 @@ int main()
 }
 void inputFraction(Fraction &fraction)
 {
-    printf("Enter the numerator: ");
-    scanf("%d", &fraction.numerator);
+    cout << "Enter the numerator: ";
+    cin >> fraction.numerator;
     do
     { //mẫu > 0
-        printf("\nEnter the denominator: ");
-        scanf("%d", &fraction.denominator);
+        cout << "\nEnter the denominator: ";
+        cin >> fraction.denominator;
         if (fraction.denominator == 0)
         {
-            printf("Enter the denomiator again!");
+            cout << "Enter the denomiator again!";
         }
     } while (fraction.denominator == 0);
 }
 void outputFraction(Fraction fraction)
 {
-    printf("\n%d / %d", fraction.numerator, fraction.denominator);
+    cout << fraction.numerator << "/"  << fraction.denominator;
 }
+
 int greatestCommonDivisor(int a, int b)
 {
 

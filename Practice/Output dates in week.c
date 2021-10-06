@@ -1,35 +1,34 @@
 //Xuat ra cac thu trong tuan
-#include<stdio.h>
+#include<iostream>
+using namespace std;
 	int main(){
 	int day;
-	printf("Input a day: ");
-	scanf("%d", &day);
-	
+	do{
+	cout << ("Input a day: ");
+	cin >> day;
 	switch(day){
 		case 2:
-			printf("Monday");
+			cout<<"Monday";
 			break;
 		case 3:
-			printf("Tuesday");
+			cout<<"Tuesday";
 			break;
 		case 4:
-			printf("Wednesday");
+			cout<<"Wednesday";
 			break;		
 		case 5:
-			printf("Thursday");
+			cout<<"Thursday";
 			break;
 		case 6:
-			printf("Friday");
+			cout<<"Friday";
 			break;
 		case 7:
-			printf("Saturday");
+			cout<<"Saturday";
 			break;		
 		case 8:
-			printf("Sunday");
+			cout<<"Sunday";
 			break;
-		default:
-			printf("Error");	
 	}
-	
+	} while(day >= 9);
 return 0;		
-		}
+}
