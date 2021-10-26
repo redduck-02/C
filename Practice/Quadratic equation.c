@@ -5,29 +5,30 @@
 		float a, b, c, delta;
 		float x, x1, x2;
 		
-		printf("Input a, b, c: ");
-		scanf("%f%f%f",&a, &b, &c);
+		printf("Input a: "); scanf("%f", &a);
+		printf("Input b: "); scanf("%f", &b);
+		printf("Input c: "); scanf("%f", &c);
+		printf("%.1fx^2 + %.1fx + %.1f\n", a, b, c);
 		
 		delta = pow(b,2) - 4*a*c;
-		
 		
 		if(a==0)
 			{
 			x = -b/a;
-			printf("x=%f",x);
+			printf("x=%.2f", x);
 			}
 			
 		else if(delta>0)
 			{
 			x1 = (-b+sqrt(delta))/2*a;
 			x2 = (-b-sqrt(delta))/2*a;
-			printf("x1 = %f, x2 = %f", x1, x2);
+			printf("x1 = %.2f, x2 = %.2f", x1, x2);
 			}
 				
 		else if(delta=0)
 			{
 			x = -b/2*a;
-			printf("x = %f", x);
+			printf("x = %.2f", x);
 			}
 			
 		else

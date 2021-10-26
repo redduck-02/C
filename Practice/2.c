@@ -18,4 +18,5 @@ int main(){
 	printf("\na++ = %d", a++);
 	printf("\na = %d", a);
 	printf("\na-- = %d", a--);
+	getchar();
 }
